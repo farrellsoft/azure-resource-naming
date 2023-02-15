@@ -3,5 +3,5 @@ locals {
 }
 
 output "user_identity_name" {
-  value = local.function_app_name
+  value = local.identity_name
 }
