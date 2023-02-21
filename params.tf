@@ -1,5 +1,4 @@
 
-
 variable application {
   type = string
   validation {
@@ -23,4 +22,10 @@ variable instance_number {
     error_message = "${var.instance_number} must be three (3) numbers."
   }
   default   = "001"
+}
+
+variable resource_type {
+  type        = string
+  description = "The type of resource being created."
+  default     = null
 }

@@ -1,5 +1,5 @@
 locals {
-  private_endpoint_name = "pe-${local.application_lower}-${local.environment_lower}-${var.instance_number}"
+  private_endpoint_name = "pe-${local.resource_type_clean}-${local.application_lower}-${local.environment_lower}-${var.instance_number}"
 }
 
 output "private_endpoint_name" {
